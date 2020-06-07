@@ -1,0 +1,24 @@
+{
+	"name": "DestinationDataset_twe",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Azure_Data_Lake_Store1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureDataLakeStoreLocation",
+				"fileName": "copy12",
+				"folderPath": "Data"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": false,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

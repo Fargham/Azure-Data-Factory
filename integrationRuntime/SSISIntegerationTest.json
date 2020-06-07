@@ -1,0 +1,31 @@
+{
+	"name": "SSISIntegerationTest",
+	"properties": {
+		"type": "Managed",
+		"typeProperties": {
+			"computeProperties": {
+				"location": "East US 2",
+				"nodeSize": "Standard_D8_v3",
+				"numberOfNodes": 2,
+				"maxParallelExecutionsPerNode": 8,
+				"vNetProperties": {
+					"vNetId": "/subscriptions/4d5ecd6d-6d1e-4e20-a61f-10f29d7f5685/resourceGroups/adf-tutorial/providers/Microsoft.Network/virtualNetworks/ADFVNet",
+					"subnet": "default"
+				}
+			},
+			"ssisProperties": {
+				"catalogInfo": {
+					"catalogServerEndpoint": "sqlserver-fargham.database.windows.net",
+					"catalogAdminUserName": "student",
+					"catalogAdminPassword": {
+						"type": "SecureString",
+						"value": "**********"
+					},
+					"catalogPricingTier": "S1"
+				},
+				"edition": "Standard",
+				"licenseType": "LicenseIncluded"
+			}
+		}
+	}
+}

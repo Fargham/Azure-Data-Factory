@@ -1,0 +1,24 @@
+{
+	"name": "trigger1",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "Fargham_Copy_PipeLine_BLOB",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/adftutorial/blobs/",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/4d5ecd6d-6d1e-4e20-a61f-10f29d7f5685/resourceGroups/adf-tutorial/providers/Microsoft.Storage/storageAccounts/farghamstrorageadf",
+			"events": [
+				"Microsoft.Storage.BlobDeleted"
+			]
+		}
+	}
+}

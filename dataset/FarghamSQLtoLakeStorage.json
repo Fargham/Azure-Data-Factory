@@ -1,0 +1,22 @@
+{
+	"name": "FarghamSQLtoLakeStorage",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Azure_Data_Lake_Store1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureDataLakeStoreLocation",
+				"folderPath": "Data"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

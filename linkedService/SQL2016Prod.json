@@ -1,0 +1,17 @@
+{
+	"name": "SQL2016Prod",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"description": "Fargham SQL Server 2016 running on Premises",
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"connectionString": "integrated security=False;data source=FARGHAMT460\\SQL2016PROD;initial catalog=pubs;user id=sa",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI1Y2QxNmVhMi01MDUzLTQ3NmUtOGIyZS1kNzUyYzdjOTgwZWEiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "SelfHostedTest",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

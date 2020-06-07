@@ -1,0 +1,27 @@
+{
+	"name": "Azure_Data_Lake_Store_Input_Test",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Azure_Data_Lake_Store1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureDataLakeStoreLocation",
+				"fileName": "customers.txt",
+				"folderPath": "Data"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,14 @@
+{
+	"name": "Azure_Data_Lake_Store1",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureDataLakeStore",
+		"typeProperties": {
+			"dataLakeStoreUri": "https://farghamdatalakestore.azuredatalakestore.net/webhdfs/v1",
+			"tenant": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+			"subscriptionId": "4d5ecd6d-6d1e-4e20-a61f-10f29d7f5685",
+			"resourceGroupName": "adf-tutorial"
+		}
+	}
+}

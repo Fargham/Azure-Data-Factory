@@ -1,0 +1,25 @@
+{
+	"name": "Test",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "COPY_WIZARD",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 10,
+				"startTime": "2020-04-21T17:28:00Z",
+				"endTime": "2020-04-27T13:05:00Z",
+				"timeZone": "UTC"
+			}
+		}
+	}
+}

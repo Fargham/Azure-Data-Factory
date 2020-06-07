@@ -1,0 +1,19 @@
+{
+	"name": "SourceDataset_bj5",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage_Public_Data_Set",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": "crime-data-2016",
+				"container": "training"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

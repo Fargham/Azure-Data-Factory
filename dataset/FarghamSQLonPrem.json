@@ -1,0 +1,54 @@
+{
+	"name": "FarghamSQLonPrem",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SQL2016Prod",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "emp_id",
+				"type": "char"
+			},
+			{
+				"name": "fname",
+				"type": "varchar"
+			},
+			{
+				"name": "minit",
+				"type": "char"
+			},
+			{
+				"name": "lname",
+				"type": "varchar"
+			},
+			{
+				"name": "job_id",
+				"type": "smallint",
+				"precision": 5
+			},
+			{
+				"name": "job_lvl",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "pub_id",
+				"type": "char"
+			},
+			{
+				"name": "hire_date",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "employee"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
